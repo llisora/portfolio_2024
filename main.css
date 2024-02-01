@@ -79,35 +79,37 @@ h3 {
     background-color: #B49286;
 }
 
-.stack-list li {
+div.list ul {
     list-style-type: circle;
-    display: block;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding: 0; /* Remove default padding on ul */
+    margin-left: 30px;
 }
 
-.stack-list ul {
-    margin-right: 100px;
-    display: block;
+div.list ul li {
+    margin-bottom: 5px; /* Adjust spacing between list items as needed */
 }
 
 /* MENU */
-ul.menu {
+div.menu {
     font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 25px;
+}
+
+div.menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 0;
-    /* Align menu to the top of its parent container */
-    right: 0;
-    /* Align menu to the right of its parent container */
-    z-index: 1;
-    margin-top: 1%;
 }
 
-li {
+div.menu ul li {
     display: inline;
-    margin-right: 70px;
-    /* Add spacing between menu items */
+    margin-right: 30px; /* Adjust spacing between menu items as needed */
 }
 
 
