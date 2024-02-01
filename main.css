@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:wght@700&family=Raleway:wght@500&family=Roboto:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3D9DC;
+    font-family: 'Nunito', sans-serif;
+    color: #828282;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #828282;
+    font-size: 24px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    color: #25282B;
+}
+
+.projects h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.projects h1::after {
+    content: '.';
+    display: block;
+    height: 1px;
+    width: 150px;
+    margin: 0px auto;
+    text-indent: -9999px;
+    border-top: 3px solid #C78283;
+}
+
+h3 {
+    font-size: 20px;
+    color: #B49286;
+}
+
+/* BUTTON */
+.button a:link, a:visited {
+    background-color: #F3D9DC;
+    font-family: 'Roboto', sans-serif;
+    color: #25282B;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #555;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+
+.button a:hover, a:active {
+    background-color: #B49286;
+}
+
+.stack-list li {
+    list-style-type: circle;
+    display: block;
+}
+
+.stack-list ul {
+    margin-right: 100px;
+    display: block;
+}
+
+/* MENU */
+ul.menu {
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    /* Align menu to the top of its parent container */
+    right: 0;
+    /* Align menu to the right of its parent container */
+    z-index: 1;
+    margin-top: 1%;
+}
+
+li {
+    display: inline;
+    margin-right: 70px;
+    /* Add spacing between menu items */
+}
+
+
+/* Set text color for links */
+li a {
+    color: black;
+    text-decoration: none;
+    /* Remove underline from links if desired */
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* FLEXBOX HEADER*/
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.column img {
+    border-radius: 50%;
+    margin-top: 10%;
+}
+
+.column img.logo {
+    margin-top: 30%;
+}
+
+/* FLEXBOX PROJECTS*/
+.row2 {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* White with 50% transparency */
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+    border-radius: 10px;
+}
+
+.column2 {
+    flex: 50%;
+}
+
+.column2 img {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.column2 h1 {
+    font-size: 40px;
+}
+
+.column2 p {
+    margin: 0 3% 0 3%;
+}
+
+.column2 h1::after {
+    border-top: 0px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #e7cacd;
+    color: #828282;
+    text-align: center;
+    height: 100px;
+    margin-top: auto;
+}
+
+/* Image styling */
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .row {
+        display: block;
+    }
+
+    .row2 {
+        display: flex;
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        width: 80%; 
+        margin: auto;
+        margin-bottom: 4%;
+    }
+
+    .column2 {
+        flex: 100%; 
+    }
+
+    .column2 img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 4%;
+    }
+
+    .column img.logo {
+        margin-top: 0;
+    }
+}
