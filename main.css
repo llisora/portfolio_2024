@@ -92,6 +92,11 @@ div.list ul li {
     margin-bottom: 5px; /* Adjust spacing between list items as needed */
 }
 
+.contact {
+    text-align: center;
+    margin: auto;
+}
+
 /* MENU */
 div.menu {
     font-family: 'Raleway', sans-serif;
